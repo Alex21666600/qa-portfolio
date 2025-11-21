@@ -1,8 +1,291 @@
-
 <!DOCTYPE html>
 <html lang="ru">
-<head><meta charset="UTF-8"><title>index.html</title></head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио QA Engineer — Макмак Александр</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background: radial-gradient(circle at top left, #1d4ed8, #020617 55%);
+      color: #fff;
+      padding: 40px 20px 60px;
+    }
+    .header-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr);
+      gap: 32px;
+      align-items: center;
+    }
+    .name {
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .role {
+      font-size: 18px;
+      opacity: 0.9;
+      margin-bottom: 16px;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .tag {
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(15,23,42,0.8);
+      border: 1px solid rgba(148,163,184,0.4);
+    }
+    .hero-img {
+      border-radius: 24px;
+      overflow: hidden;
+      background: #020617;
+      border: 1px solid rgba(148,163,184,0.45);
+      box-shadow: 0 24px 60px rgba(15,23,42,0.7);
+    }
+    .hero-img img {
+      width: 100%;
+      display: block;
+    }
+    .container {
+      max-width: 960px;
+      margin: -40px auto 60px;
+      padding: 0 20px 20px;
+    }
+    h2.section-title {
+      font-size: 22px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2.section-title::before {
+      content: "";
+      width: 4px;
+      height: 22px;
+      border-radius: 999px;
+      background: linear-gradient(to bottom, #3b82f6, #22c55e);
+    }
+    .card {
+      background: rgba(15,23,42,0.96);
+      border-radius: 18px;
+      padding: 22px 22px 20px;
+      margin-top: 14px;
+      border: 1px solid rgba(148,163,184,0.35);
+      box-shadow: 0 18px 45px rgba(15,23,42,0.8);
+    }
+    .contacts p {
+      margin: 4px 0;
+      font-size: 14px;
+      color: #cbd5f5;
+    }
+    .contacts strong {
+      color: #e5e7eb;
+    }
+    ul {
+      margin: 8px 0 0;
+      padding-left: 20px;
+      color: #cbd5f5;
+      font-size: 14px;
+    }
+    .project-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #e5e7eb;
+    }
+    .project-links {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 2px 10px;
+      border-radius: 999px;
+      background: rgba(30,64,175,0.45);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #bfdbfe;
+      margin-bottom: 4px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.3fr);
+      gap: 20px;
+    }
+    .about-text {
+      font-size: 14px;
+      color: #cbd5f5;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #64748b;
+      padding: 20px 0 30px;
+    }
+    @media (max-width: 768px) {
+      .header-inner {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .container {
+        margin-top: -20px;
+      }
+      .grid-2 {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
+</head>
 <body>
-<p>Ваш HTML-файл был успешно создан. Вставьте сюда свой код позже.</p>
+  <header>
+    <div class="header-inner">
+      <div>
+        <div class="name">Макмак Александр Юрьевич</div>
+        <div class="role">QA Engineer / Инженер по тестированию</div>
+        <p>Занимаюсь тестированием веб-приложений, пишу тест-кейсы и чек-листы, работаю с API и инструментами
+          разработчика. Ориентирован на качество продукта и прозрачную тестовую документацию.</p>
+        <div class="tags">
+          <span class="tag">Web-тестирование</span>
+          <span class="tag">API / Postman</span>
+          <span class="tag">Jira / Yougile</span>
+          <span class="tag">Python / pytest (база)</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Chrome DevTools</span>
+        </div>
+      </div>
+      <div class="hero-img">
+        <!-- Картинка, которую ты загрузил -->
+        <img src="c8d0ecc3-cec8-405b-b91f-df72480305f8.png" alt="QA Engineer обложка" />
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <h2 class="section-title">Контакты</h2>
+    <section class="card contacts">
+      <p><strong>Телефон:</strong> +7 918-218-75-69</p>
+      <p><strong>Email:</strong> <a href="mailto:user.trail@gmail.com">user.trail@gmail.com</a></p>
+      <p><strong>Telegram:</strong> <a href="https://t.me/Alex2166600" target="_blank">@Alex2166600</a></p>
+      <p><strong>Город:</strong> Краснодар</p>
+    </section>
+
+    <h2 class="section-title">Обо мне и навыки</h2>
+    <section class="card">
+      <div class="grid-2">
+        <div class="about-text">
+          <p>Внимательный к деталям и структурный специалист, ориентированный на улучшение качества продукта.
+            Практикую ручное тестирование веб-приложений, прорабатываю тестовую документацию и проверяю как UI, так и API.</p>
+          <p>Хочу расти в направлении ручного QA и постепенно углубляться в автоматизацию на Python.</p>
+        </div>
+        <div>
+          <ul>
+            <li>Тестирование веб-приложений (UI, кроссбраузерность, кроссплатформенность)</li>
+            <li>Разработка и ведение тест-кейсов, чек-листов, баг-репортов</li>
+            <li>Функциональное и нефункциональное тестирование</li>
+            <li>Тест-дизайн, анализ требований и спецификаций</li>
+            <li>Jira, Yougile — ведение доски задач и тестовой документации</li>
+            <li>API-тестирование: Postman (коллекции, переменные окружений, автотесты)</li>
+            <li>Chrome DevTools для анализа запросов, логов и сетевого трафика</li>
+            <li>SQL — простые запросы для проверки данных</li>
+            <li>Git — базовая работа с репозиториями</li>
+            <li>HTML, CSS — понимание структуры верстки</li>
+            <li>Английский язык — уровень B2</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="section-title">Проекты (портфолио)</h2>
+
+    <section class="card">
+      <div class="pill">Проект 1</div>
+      <div class="project-title">Автотесты на Python (Skillbox)</div>
+      <div class="project-links">
+        <strong>GitLab:</strong>
+        <a href="https://gitlab.skillbox.ru/aleksandr_makmak/python-autotests-basic/-/tree/main/final_project_pizzeria-autotests" target="_blank">
+          Репозиторий с автотестами
+        </a>
+      </div>
+      <ul>
+        <li>Создан набор автотестов на Python с использованием pytest.</li>
+        <li>Настроен репозиторий в GitLab: структура проекта, ветки, коммиты.</li>
+        <li>Реализованы фикстуры, раздельные файлы для тестов и данных.</li>
+        <li>Настроено логирование и формирование отчётов по прогону тестов.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="pill">Проект 2</div>
+      <div class="project-title">Тестирование веб-приложения</div>
+      <div class="project-links">
+        <strong>Yougile:</strong>
+        <a href="https://ru.yougile.com/board/v8quq6ay0esa" target="_blank">
+          Доска задач и тест-документации
+        </a>
+      </div>
+      <ul>
+        <li>Ведена доска задач и тестовой документации в Yougile.</li>
+        <li>Созданы тест-кейсы, чек-листы и баг-репорты.</li>
+        <li>Проведено API- и UI-тестирование.</li>
+        <li>Проверены сценарии корзины, фильтров, регистрации, каталога.</li>
+        <li>Выявлены критические дефекты по основным процессам.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="pill">Проект 3</div>
+      <div class="project-title">API-тестирование (Postman)</div>
+      <div class="project-links">
+        <strong>Postman:</strong> ссылка может быть добавлена
+      </div>
+      <ul>
+        <li>Создана коллекция API-запросов.</li>
+        <li>Добавлены автотесты через pre-request и tests-скрипты.</li>
+        <li>Использованы переменные окружений.</li>
+        <li>Оформлена документация в Postman.</li>
+        <li>Протестированы эндпоинты и обработка ошибок.</li>
+      </ul>
+    </section>
+
+    <h2 class="section-title">Образование и курсы</h2>
+    <section class="card">
+      <ul>
+        <li><strong>Московский финансово-промышленный университет «Синергия»</strong> — Бакалавр юриспруденции</li>
+        <li><strong>SKILLBOX — Инженер по тестированию (2025)</strong>: ручное тестирование, веб-тестирование, SQL, Git, основы Python, автоматизация</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    Портфолио QA Engineer — Макмак Александр
+  </footer>
 </body>
 </html>
